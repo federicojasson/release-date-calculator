@@ -1,0 +1,23 @@
+{
+  "name": "release-date-calculator",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Federico Jasson",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/federicojasson/release-date-calculator.git"
+  },
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jasmine",
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "codacy-coverage": "^2.0.2",
+    "electron": "^1.6.11",
+    "eslint": "^4.2.0",
+    "jasmine": "^2.6.0"
+  }
+}
