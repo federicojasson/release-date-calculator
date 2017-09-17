@@ -28,6 +28,7 @@
         "functions": false
       }
     ],
+    "no-var": "error",
     "quotes": [
       "error",
       "single"
