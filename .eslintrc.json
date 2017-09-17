@@ -1,12 +1,15 @@
 {
   "extends": "eslint:recommended",
   "env": {
-    "es6": true,
-    "jasmine": true,
-    "node": true
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "angular": true
   },
   "rules": {
     "camelcase": "error",
+    "comma-dangle": "error",
     "indent": [
       "error",
       2,
@@ -14,10 +17,24 @@
         "SwitchCase": 1
       }
     ],
-    "no-use-before-define": "error",
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "no-console": "off",
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false
+      }
+    ],
     "quotes": [
       "error",
       "single"
+    ],
+    "semi": [
+      "error",
+      "always"
     ]
   }
 }

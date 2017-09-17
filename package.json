@@ -8,7 +8,8 @@
     "url": "https://github.com/federicojasson/release-date-calculator.git"
   },
   "scripts": {
-    "pretest": "eslint ."
+    "pretest": "eslint .",
+    "test": ""
   },
   "devDependencies": {
     "eslint": "^4.7.0"
