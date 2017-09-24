@@ -10,7 +10,7 @@
   function config($stateProvider) {
     $stateProvider
       .state({
-        name: 'app',
+        name: 'home',
         url: '/',
         redirectTo: 'calculator'
       });
