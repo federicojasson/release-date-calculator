@@ -5,4 +5,6 @@
 Fecha de detención:
 <app-date-input on-change="$ctrl.setDateOfArrest(value)"></app-date-input>
 
+<app-result ng-repeat="result in $ctrl.results" value="result"></app-result>
+
 <app-footer></app-footer>
