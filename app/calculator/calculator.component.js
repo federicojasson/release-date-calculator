@@ -9,17 +9,19 @@
     });
 
   function controller() {
-    this.$onInit = $onInit;
-    this.setDateOfArrest = setDateOfArrest;
+    const $ctrl = this;
+
+    $ctrl.$onInit = $onInit;
+    $ctrl.setDateOfArrest = setDateOfArrest;
 
     // ----------------------
 
     function $onInit() {
-      this.dateOfArrest = null;
+      $ctrl.dateOfArrest = null;
     }
 
     function setDateOfArrest(dateOfArrest) {
-      this.dateOfArrest = dateOfArrest;
+      $ctrl.dateOfArrest = dateOfArrest;
     }
   }
 })();

@@ -12,25 +12,27 @@
     });
 
   function controller() {
-    this.$onInit = $onInit;
-    this.notifyChange = notifyChange;
+    const $ctrl = this;
+
+    $ctrl.$onInit = $onInit;
+    $ctrl.notifyChange = notifyChange;
 
     // ----------------------
 
     function $onInit() {
-      this.year = null;
-      this.month = null;
-      this.day = null;
+      $ctrl.year = null;
+      $ctrl.month = null;
+      $ctrl.day = null;
     }
 
     function notifyChange() {
       const value = {
-        year: this.year,
-        month: this.month,
-        day: this.day
+        year: $ctrl.year,
+        month: $ctrl.month,
+        day: $ctrl.day
       };
 
-      this.onChange({ value });
+      $ctrl.onChange({ value });
     }
   }
 })();
