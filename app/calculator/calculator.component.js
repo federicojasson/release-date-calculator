@@ -8,7 +8,9 @@
       templateUrl: 'app/calculator/calculator.component.html'
     });
 
-  function controller() {
+  controller.$inject = ['calculator'];
+
+  function controller(calculator) {
     const $ctrl = this;
 
     $ctrl.$onInit = $onInit;
@@ -17,11 +19,13 @@
     // ----------------------
 
     function $onInit() {
-      $ctrl.dateOfArrest = null;
+      $ctrl.params = {};
+      $ctrl.results = null;
     }
 
     function setDateOfArrest(dateOfArrest) {
-      $ctrl.dateOfArrest = dateOfArrest;
+      $ctrl.params.dateOfArrest = dateOfArrest;
+      $ctrl.results = calculator.calculate($ctrl.params);
     }
   }
 })();
