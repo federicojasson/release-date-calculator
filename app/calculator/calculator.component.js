@@ -20,11 +20,15 @@
 
     function $onInit() {
       $ctrl.params = {};
-      $ctrl.results = null;
+      $ctrl.results = [];
     }
 
     function setDateOfArrest(dateOfArrest) {
       $ctrl.params.dateOfArrest = dateOfArrest;
+      calculate();
+    }
+
+    function calculate() {
       $ctrl.results = calculator.calculate($ctrl.params);
     }
   }
